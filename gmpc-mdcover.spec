@@ -35,5 +35,5 @@ artist information from the file system.
 
 %files
 %defattr(-,root,root)
-%{_datadir}/gmpc/plugins/mdcaplugin.la
-%{_datadir}/gmpc/plugins/mdcaplugin.so
+%{_libdir}/gmpc/plugins/mdcaplugin.la
+%{_libdir}/gmpc/plugins/mdcaplugin.so
