@@ -1,6 +1,6 @@
 Summary:	A directory artist/song provider plugin for gmpc
 Name:		gmpc-mdcover
-Version:	0.16.0
+Version:	0.17.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
@@ -29,10 +29,6 @@ artist information from the file system.
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %makeinstall_std
-
-%if "%_libdir" != "%_prefix/lib"
-mv %buildroot%_prefix/lib %buildroot%_libdir
-%endif
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
