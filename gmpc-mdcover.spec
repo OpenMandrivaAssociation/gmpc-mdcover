@@ -1,15 +1,15 @@
 Summary:	A directory artist/song provider plugin for gmpc
 Name:		gmpc-mdcover
-Version:	0.17.0
+Version:	0.18.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
 Url:		http://www.sarine.nl//gmpc-plugins-mdcover
-Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.bz2
-BuildRequires:	libmpd-devel
+Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	libmpd-devel >= 0.15.98
 BuildRequires:	libxml2-devel
-BuildRequires:	libglade2.0-devel
-BuildRequires:	gmpc-devel
+BuildRequires:	gtk+2-devel >= 2.8
+BuildRequires:	gmpc-devel >= 0.15.98
 Requires:	gmpc
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
